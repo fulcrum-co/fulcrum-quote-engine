@@ -1,0 +1,190 @@
+import { StyleSheet } from '@react-pdf/renderer';
+
+export const styles = StyleSheet.create({
+  page: {
+    padding: 40,
+    fontFamily: 'Helvetica',
+    fontSize: 10,
+    color: '#1a1a1a',
+    backgroundColor: '#ffffff',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 30,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e5e7eb',
+  },
+  logo: {
+    width: 120,
+    height: 30,
+  },
+  headerText: {
+    fontSize: 10,
+    color: '#6b7280',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    color: '#1a1a1a',
+  },
+  subtitle: {
+    fontSize: 14,
+    color: '#6b7280',
+    marginBottom: 24,
+  },
+  section: {
+    marginBottom: 24,
+  },
+  sectionTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 12,
+    color: '#1a1a1a',
+    paddingBottom: 8,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e5e7eb',
+  },
+  row: {
+    flexDirection: 'row',
+    marginBottom: 8,
+  },
+  label: {
+    width: '40%',
+    fontSize: 10,
+    color: '#6b7280',
+  },
+  value: {
+    width: '60%',
+    fontSize: 10,
+    color: '#1a1a1a',
+  },
+  scoreCard: {
+    flexDirection: 'row',
+    backgroundColor: '#f9fafb',
+    borderRadius: 8,
+    padding: 16,
+    marginBottom: 16,
+  },
+  scoreItem: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  scoreValue: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#1a1a1a',
+  },
+  scoreLabel: {
+    fontSize: 9,
+    color: '#6b7280',
+    marginTop: 4,
+    textAlign: 'center',
+  },
+  tierBadge: {
+    backgroundColor: '#1a1a1a',
+    color: '#ffffff',
+    padding: '8 16',
+    borderRadius: 4,
+    fontSize: 12,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    alignSelf: 'flex-start',
+  },
+  pricingBox: {
+    backgroundColor: '#f9fafb',
+    borderRadius: 8,
+    padding: 20,
+    marginBottom: 20,
+  },
+  pricingRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  pricingLabel: {
+    fontSize: 11,
+    color: '#6b7280',
+  },
+  pricingValue: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#1a1a1a',
+  },
+  pattern: {
+    backgroundColor: '#f9fafb',
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 12,
+  },
+  patternTitle: {
+    fontSize: 11,
+    fontWeight: 'bold',
+    color: '#1a1a1a',
+    marginBottom: 4,
+  },
+  patternDescription: {
+    fontSize: 10,
+    color: '#6b7280',
+    marginBottom: 8,
+  },
+  recommendation: {
+    fontSize: 9,
+    color: '#1a1a1a',
+    marginLeft: 12,
+    marginBottom: 4,
+  },
+  bullet: {
+    fontSize: 10,
+    marginRight: 4,
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 30,
+    left: 40,
+    right: 40,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#e5e7eb',
+  },
+  footerText: {
+    fontSize: 8,
+    color: '#9ca3af',
+  },
+  pageNumber: {
+    fontSize: 8,
+    color: '#9ca3af',
+  },
+  confidential: {
+    backgroundColor: '#fef3c7',
+    padding: '8 12',
+    borderRadius: 4,
+    marginBottom: 20,
+  },
+  confidentialText: {
+    fontSize: 9,
+    color: '#92400e',
+    textAlign: 'center',
+  },
+  nextSteps: {
+    backgroundColor: '#ecfdf5',
+    borderRadius: 8,
+    padding: 16,
+    marginTop: 20,
+  },
+  nextStepsTitle: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#065f46',
+    marginBottom: 8,
+  },
+  nextStepsText: {
+    fontSize: 10,
+    color: '#047857',
+  },
+});
