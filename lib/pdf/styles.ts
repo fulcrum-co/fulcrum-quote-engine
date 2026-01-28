@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
   },
   logo: {
     width: 120,
-    height: 30,
+    height: 24,
   },
   headerText: {
     fontSize: 10,

@@ -5,156 +5,160 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-[#e5e7eb]">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Image
-            src="/fulcrum-logo.png"
-            alt="Fulcrum"
-            width={120}
-            height={30}
-            className="h-8 w-auto"
-            priority
-          />
-          <Link
-            href="/quote"
-            className="px-6 py-2 bg-[#1a1a1a] text-white rounded-lg font-medium hover:bg-[#2a2a2a] transition-colors"
-          >
-            Start Assessment
-          </Link>
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#e5e7eb]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <Link href="https://www.fulcrumcollective.io" className="flex items-center">
+              <Image
+                src="/fulcrum-logo.png"
+                alt="Fulcrum Collective"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
+                priority
+              />
+            </Link>
+            <a
+              href="https://cal.com/fulcrumcollective/discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-[#6b7280] hover:text-[#1a1a1a] transition-colors"
+            >
+              Schedule a Strategy Call
+            </a>
+          </div>
         </div>
       </header>
 
       {/* Hero */}
-      <main className="max-w-5xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-semibold text-[#1a1a1a] mb-6">
+      <section className="py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-semibold text-[#1a1a1a] tracking-tight leading-tight">
             Get Your Custom Quote
           </h1>
-          <p className="text-xl text-[#6b7280] max-w-2xl mx-auto mb-8">
+          <p className="mt-6 text-lg sm:text-xl text-[#6b7280] leading-relaxed max-w-3xl mx-auto">
             Complete our quick assessment to receive a personalized quote tailored
             to your organization&apos;s unique operational needs.
           </p>
-          <Link
-            href="/quote"
-            className="inline-flex px-8 py-4 bg-[#1a1a1a] text-white rounded-lg font-medium text-lg hover:bg-[#2a2a2a] transition-colors"
-          >
-            Start Your Assessment
-          </Link>
-        </div>
-
-        {/* Features */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="p-6 bg-[#f9fafb] rounded-lg">
-            <div className="w-12 h-12 bg-[#1a1a1a] rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-              </svg>
-            </div>
-            <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">
-              Comprehensive Assessment
-            </h3>
-            <p className="text-[#6b7280]">
-              38 questions across 10 key areas to thoroughly understand your operational complexity.
-            </p>
-          </div>
-
-          <div className="p-6 bg-[#f9fafb] rounded-lg">
-            <div className="w-12 h-12 bg-[#1a1a1a] rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">
-              Instant Analysis
-            </h3>
-            <p className="text-[#6b7280]">
-              Get immediate insights into your complexity profile and recommended service tier.
-            </p>
-          </div>
-
-          <div className="p-6 bg-[#f9fafb] rounded-lg">
-            <div className="w-12 h-12 bg-[#1a1a1a] rounded-lg flex items-center justify-center mb-4">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">
-              Detailed Report
-            </h3>
-            <p className="text-[#6b7280]">
-              Receive a comprehensive PDF report with pricing estimates and recommendations.
-            </p>
+          <div className="mt-10">
+            <Link
+              href="/quote"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[#2563eb] rounded-lg hover:bg-[#1d4ed8] transition-colors shadow-sm"
+            >
+              Start Custom Quote
+            </Link>
           </div>
         </div>
+      </section>
 
-        {/* How it works */}
-        <div className="bg-[#f9fafb] rounded-lg p-8 mb-16">
-          <h2 className="text-2xl font-semibold text-[#1a1a1a] text-center mb-8">
+      {/* Features - Pastel Cards */}
+      <section className="py-16 bg-[#f9fafb]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-[#eff6ff] rounded-xl p-8 relative">
+              <span className="absolute top-6 right-6 text-sm font-medium text-[#6b7280]/50">
+                01
+              </span>
+              <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
+                Comprehensive Assessment
+              </h3>
+              <p className="mt-4 text-[#6b7280] leading-relaxed">
+                38 questions across 10 key areas to thoroughly understand your operational complexity.
+              </p>
+            </div>
+
+            <div className="bg-[#f0fdf4] rounded-xl p-8 relative">
+              <span className="absolute top-6 right-6 text-sm font-medium text-[#6b7280]/50">
+                02
+              </span>
+              <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
+                Instant Analysis
+              </h3>
+              <p className="mt-4 text-[#6b7280] leading-relaxed">
+                Get immediate insights into your complexity profile and recommended service tier.
+              </p>
+            </div>
+
+            <div className="bg-[#fffbeb] rounded-xl p-8 relative">
+              <span className="absolute top-6 right-6 text-sm font-medium text-[#6b7280]/50">
+                03
+              </span>
+              <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
+                Detailed Quote & Report
+              </h3>
+              <p className="mt-4 text-[#6b7280] leading-relaxed">
+                Receive a comprehensive PDF report with pricing estimates and recommendations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-semibold text-[#1a1a1a] text-center mb-12">
             How It Works
           </h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="w-10 h-10 bg-[#1a1a1a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold">
+              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
                 1
               </div>
-              <h4 className="font-medium text-[#1a1a1a] mb-1">Complete Assessment</h4>
-              <p className="text-sm text-[#6b7280]">Answer questions about your business</p>
+              <h4 className="font-semibold text-[#1a1a1a] mb-2">Complete the Quote Request</h4>
+              <p className="text-[#6b7280]">Answer questions about your business and operational needs</p>
             </div>
             <div className="text-center">
-              <div className="w-10 h-10 bg-[#1a1a1a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold">
+              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
                 2
               </div>
-              <h4 className="font-medium text-[#1a1a1a] mb-1">Get Analysis</h4>
-              <p className="text-sm text-[#6b7280]">We analyze your complexity profile</p>
+              <h4 className="font-semibold text-[#1a1a1a] mb-2">Receive Custom Quote</h4>
+              <p className="text-[#6b7280]">Get detailed pricing and insights delivered to your inbox</p>
             </div>
             <div className="text-center">
-              <div className="w-10 h-10 bg-[#1a1a1a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold">
+              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
                 3
               </div>
-              <h4 className="font-medium text-[#1a1a1a] mb-1">Receive Report</h4>
-              <p className="text-sm text-[#6b7280]">Get detailed quote and insights</p>
-            </div>
-            <div className="text-center">
-              <div className="w-10 h-10 bg-[#1a1a1a] text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold">
-                4
-              </div>
-              <h4 className="font-medium text-[#1a1a1a] mb-1">Connect With Us</h4>
-              <p className="text-sm text-[#6b7280]">Discuss your specific needs</p>
+              <h4 className="font-semibold text-[#1a1a1a] mb-2">Connect with Us</h4>
+              <p className="text-[#6b7280]">Discuss your specific needs with our team</p>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* CTA */}
-        <div className="text-center">
-          <h2 className="text-2xl font-semibold text-[#1a1a1a] mb-4">
+      {/* CTA */}
+      <section className="py-16 bg-[#f9fafb]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-[#1a1a1a] mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-[#6b7280] mb-6">
+          <p className="text-lg text-[#6b7280] mb-8">
             The assessment takes about 10-15 minutes to complete.
           </p>
           <Link
             href="/quote"
-            className="inline-flex px-8 py-4 bg-[#1a1a1a] text-white rounded-lg font-medium text-lg hover:bg-[#2a2a2a] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[#2563eb] rounded-lg hover:bg-[#1d4ed8] transition-colors shadow-sm"
           >
-            Begin Assessment
+            Start Custom Quote
           </Link>
         </div>
-      </main>
+      </section>
 
       {/* Footer */}
-      <footer className="border-t border-[#e5e7eb] mt-16">
-        <div className="max-w-5xl mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <Image
-              src="/fulcrum-logo.png"
-              alt="Fulcrum"
-              width={100}
-              height={25}
-              className="h-6 w-auto"
-            />
-            <p className="text-sm text-[#9ca3af]">
-              Building Operational Leverage
+      <footer className="py-12 border-t border-[#e5e7eb]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-[#6b7280]">
+              Fulcrum Collective &middot; Building Operational Leverage
             </p>
+            <a
+              href="https://www.fulcrumcollective.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#6b7280] hover:text-[#1a1a1a] transition-colors"
+            >
+              fulcrumcollective.io
+            </a>
           </div>
         </div>
       </footer>

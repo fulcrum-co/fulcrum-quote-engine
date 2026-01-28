@@ -1,5 +1,5 @@
 import React from 'react';
-import { Document, Page, Text, View, Image } from '@react-pdf/renderer';
+import { Document, Page, Text, View, Image, Link } from '@react-pdf/renderer';
 import { renderToBuffer } from '@react-pdf/renderer';
 import { ContactInfo, QuoteResponses, QuoteAnalysis } from '@/lib/types/quote';
 import { getTierInfo, formatCurrency } from '@/lib/analysis';
@@ -100,13 +100,27 @@ function QuoteDocument({ contact, responses, analysis, logoBase64 }: QuoteDocume
         </View>
 
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Recommended Service Tier</Text>
+          <Text style={styles.sectionTitle}>Recommended Service Tier & Pricing</Text>
           <View style={styles.tierBadge}>
             <Text>{tierInfo.name.toUpperCase()}</Text>
           </View>
-          <Text style={{ fontSize: 10, color: '#6b7280', marginTop: 8 }}>
+          <Text style={{ fontSize: 10, color: '#6b7280', marginTop: 8, marginBottom: 16 }}>
             {tierInfo.description}
           </Text>
+          <View style={{ backgroundColor: '#f9fafb', borderRadius: 8, padding: 16 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 8 }}>
+              <Text style={{ fontSize: 10, color: '#6b7280' }}>Monthly Investment</Text>
+              <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#1a1a1a' }}>
+                {formatCurrency(analysis.pricing.monthlyMin)} - {formatCurrency(analysis.pricing.monthlyMax)}
+              </Text>
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Text style={{ fontSize: 10, color: '#6b7280' }}>Implementation</Text>
+              <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#1a1a1a' }}>
+                {formatCurrency(analysis.pricing.implementationMin)} - {formatCurrency(analysis.pricing.implementationMax)}
+              </Text>
+            </View>
+          </View>
         </View>
 
         <View style={styles.footer}>
@@ -300,11 +314,15 @@ function QuoteDocument({ contact, responses, analysis, logoBase64 }: QuoteDocume
           </Text>
           <View style={styles.row}>
             <Text style={styles.label}>Email</Text>
-            <Text style={styles.value}>quotes@fulcrum.co</Text>
+            <Link src="mailto:joe@fulcrumcollective.io" style={{ ...styles.value, color: '#2563eb', textDecoration: 'none' }}>
+              joe@fulcrumcollective.io
+            </Link>
           </View>
           <View style={styles.row}>
             <Text style={styles.label}>Website</Text>
-            <Text style={styles.value}>www.fulcrum.co</Text>
+            <Link src="https://www.fulcrumcollective.io" style={{ ...styles.value, color: '#2563eb', textDecoration: 'none' }}>
+              www.fulcrumcollective.io
+            </Link>
           </View>
         </View>
 

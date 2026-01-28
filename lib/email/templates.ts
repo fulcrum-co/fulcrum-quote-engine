@@ -17,7 +17,7 @@ export function getProspectEmailHtml(contact: ContactInfo, analysis: QuoteAnalys
         <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
           <tr>
             <td style="padding: 40px 40px 20px;">
-              <img src="https://fulcrum.co/logo.png" alt="Fulcrum" style="height: 32px; width: auto;">
+              <img src="https://quotes.fulcrumcollective.io/fulcrum-logo.png" alt="Fulcrum" style="height: 32px; width: auto;">
             </td>
           </tr>
           <tr>

@@ -25,7 +25,7 @@ export async function sendQuoteEmail({
 
   try {
     const { error } = await resend.emails.send({
-      from: 'Fulcrum <quotes@fulcrum.co>',
+      from: 'Fulcrum <quotes@fulcrumcollective.io>',
       to: contact.email,
       subject: `Your Quote Assessment Report - ${contact.companyName}`,
       html: getProspectEmailHtml(contact, analysis),
@@ -63,11 +63,11 @@ export async function sendNotificationEmail({
     return { success: false, error: 'Email service not configured' };
   }
 
-  const notificationEmail = process.env.NOTIFICATION_EMAIL || 'team@fulcrum.co';
+  const notificationEmail = process.env.NOTIFICATION_EMAIL || 'joe@fulcrumcollective.io';
 
   try {
     const { error } = await resend.emails.send({
-      from: 'Fulcrum Quote Engine <quotes@fulcrum.co>',
+      from: 'Fulcrum Quote Engine <quotes@fulcrumcollective.io>',
       to: notificationEmail,
       subject: `New Quote Assessment: ${contact.companyName} - ${analysis.isQualified ? 'Qualified' : 'Review Needed'}`,
       html: getNotificationEmailHtml(contact, analysis, quoteId),
