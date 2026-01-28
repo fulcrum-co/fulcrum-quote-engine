@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features - Pastel Cards */}
+      {/* How It Works - Pastel Cards */}
       <section className="py-16 bg-[#f9fafb]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
@@ -60,10 +60,10 @@ export default function Home() {
                 01
               </span>
               <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
-                Comprehensive Assessment
+                Complete the Quote Request
               </h3>
               <p className="mt-4 text-[#6b7280] leading-relaxed">
-                38 questions across 10 key areas to thoroughly understand your operational complexity.
+                Answer questions about your business and operational needs.
               </p>
             </div>
 
@@ -72,10 +72,10 @@ export default function Home() {
                 02
               </span>
               <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
-                Instant Analysis
+                Receive Custom Quote
               </h3>
               <p className="mt-4 text-[#6b7280] leading-relaxed">
-                Get immediate insights into your complexity profile and recommended service tier.
+                Get detailed pricing and insights delivered to your inbox.
               </p>
             </div>
 
@@ -84,43 +84,11 @@ export default function Home() {
                 03
               </span>
               <h3 className="text-lg font-semibold text-[#1a1a1a] pr-8 leading-snug">
-                Detailed Quote & Report
+                Connect with Us
               </h3>
               <p className="mt-4 text-[#6b7280] leading-relaxed">
-                Receive a comprehensive PDF report with pricing estimates and recommendations.
+                Discuss your specific needs with our team.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-[#1a1a1a] text-center mb-12">
-            How It Works
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
-                1
-              </div>
-              <h4 className="font-semibold text-[#1a1a1a] mb-2">Complete the Quote Request</h4>
-              <p className="text-[#6b7280]">Answer questions about your business and operational needs</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
-                2
-              </div>
-              <h4 className="font-semibold text-[#1a1a1a] mb-2">Receive Custom Quote</h4>
-              <p className="text-[#6b7280]">Get detailed pricing and insights delivered to your inbox</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-[#2563eb] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-lg font-semibold">
-                3
-              </div>
-              <h4 className="font-semibold text-[#1a1a1a] mb-2">Connect with Us</h4>
-              <p className="text-[#6b7280]">Discuss your specific needs with our team</p>
             </div>
           </div>
         </div>
